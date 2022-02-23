@@ -43,6 +43,39 @@ header > section.menu-bar {
     gap: 20px;
     font-family: var(--font-text);
 }
+
+header > section.menu-bar > article:nth-child(1):before{
+    content: "";
+    margin-right: 5px;
+    padding: 0 1px;
+    height: 10px;
+    background-color: var(--green);
+}
+
+header > section.search{
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+}
+
+header > section.search > input{
+    outline: none;
+    padding: 0px 20px;
+    border-radius: 5px 0 0 5px;
+    height: 37px;
+    background-color: var(--dark-bg);
+}
+section.search > input:focus{
+    color: var(--white);
+}
+
+header > section.search > button{
+    height: 37px;
+    padding: 0 25px;
+    border-radius: 0 5px 5px 0px;
+    background-color: var(--button-bg);
+}
+
 .destaque {
     height: 350px;
     display: flex;
